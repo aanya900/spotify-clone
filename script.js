@@ -85,7 +85,7 @@ playMusic.forEach((element) => {
 
 let allMusic = Array.from(document.getElementsByClassName('music-card'));
 
-songs = [
+const songs = [
     {songName: "Shape of you",songDes: "A record-breaking 2017 pop song" , songImage : "images/1.jpg", songPath: "audio/1.mp3"},
     {songName: "Senorita",songDes:"A passionate, intense summer romance." , songImage : "images/2.jpg", songPath: "audio/2.mp3"},
     {songName: "Harleys in hawaii",songDes: "Tropical, romantic motorcycle love song" , songImage : "images/3.jpg", songPath: "audio/3.mp3"},
