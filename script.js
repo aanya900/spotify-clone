@@ -1,5 +1,5 @@
 let progressBar = document.getElementById('progressBar');
-let audio = new Audio('Audio/1.mp3');
+let audio = new Audio('audio/1.mp3');
 let currentSong = 1;
 
 play.addEventListener('click', () => {
@@ -46,7 +46,7 @@ makeAllPlay = () => {
 
 //         index = parseInt(e.target.id);
 //         currentSong = index;
-//         audio.src = `Audio/${index}.mp3`;
+//         audio.src = `audio/${index}.mp3`;
 //         audio.currentTime = 0;
 //         audio.play();
 //         updateNowBar();
@@ -73,7 +73,7 @@ playMusic.forEach((element) => {
 
             if (currentSong !== clickedIndex) {
                 currentSong = clickedIndex;
-                audio.src = `Audio/${clickedIndex}.mp3`;
+                audio.src = `audio/${clickedIndex}.mp3`;
                 audio.currentTime = 0;
             }
             
@@ -287,7 +287,7 @@ playPrevSong = () => {
         currentSong = currentSong - 1 === 0 ? songs.length : currentSong - 1;
     }
 
-    audio.src = `Audio/${currentSong}.mp3`;
+    audio.src = `audio/${currentSong}.mp3`;
     audio.currentTime = 0;
     audio.play();
     updateNowBar();
